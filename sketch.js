@@ -86,8 +86,10 @@ function setup() {
 
   logo = createSprite(200,340,1,1) 
   logo.addImage(img1) 
-  logo.scale = 0.27;
-}
+  logo.scale = 0.27; 
+
+  input1 = createInput(); 
+} 
 
 function draw() {   
 
@@ -275,9 +277,8 @@ if(gameState === START) {
     b2.destroy();
     b3.destroy(); 
     getchat(); 
-    input=createInput();
-  input.position(50,520);
-msg=input.value(); 
+   input1.position(50,540)
+  msg=input1.value(); 
 chat = chatofperson1;
 console.log(chat) 
 fill("black") 
